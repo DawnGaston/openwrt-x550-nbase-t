@@ -8,12 +8,12 @@ include $(INCLUDE_DIR)/package.mk
 define Package/x550-nbase-t
   SECTION:=net
   CATEGORY:=Network
-  TITLE:=Intel x550 advertise 2.5 Gbps or 5 Gbps
+  TITLE:=Explicitly advertise 2.5G/5G link modes for Intel x550
   DEPENDS:=+kmod-ixgbe +ethtool +pciutils
 endef
 
 define Package/x550-nbase-t/description
-  Intel x550 advertise 2.5 Gbps or 5 Gbps.
+  Explicitly advertise 2.5G/5G link modes for Intel x550.
 endef
 
 define Package/x550-nbase-t/install
