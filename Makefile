@@ -16,6 +16,9 @@ define Package/x550-nbase-t/description
   Explicitly advertise 2.5G/5G link modes for Intel x550.
 endef
 
+define Build/Compile
+endef
+
 define Package/x550-nbase-t/install
 	$(INSTALL_DIR) $(1)/etc/init.d
 	$(INSTALL_BIN) ./files/x550-nbase-t.init $(1)/etc/init.d/x550-nbase-t
