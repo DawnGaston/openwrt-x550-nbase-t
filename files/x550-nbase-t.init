@@ -9,7 +9,7 @@ start()
 
 	for ifname in ${all_ifs}
 	do
-		if_pci=`ethtool -i ${ifname} | grep -i 'bus-info' | cut -b 16-`
+		if_pci=`ethtool -i ${ifname} | grep -i 'bus-info' | cut -d : -f 3-`
 		if [[ "$all_pcis" =~ "$if_pci" ]]
 		then
 			ethtool -s ${ifname} advertise 0x1800000001028
