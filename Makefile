@@ -6,8 +6,6 @@ PKG_RELEASE:=$(COMMITCOUNT)
 include $(INCLUDE_DIR)/package.mk
 
 define Package/x550-nbase-t
-  SECTION:=net
-  CATEGORY:=Network
   TITLE:=Explicitly advertise 2.5G/5G link modes for Intel x550
   DEPENDS:=+kmod-ixgbe +ethtool +pciutils
 endef
