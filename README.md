@@ -21,5 +21,4 @@ Where N is a combination of the following.
 10000baseTFull 0x1000
 
 For example, to turn on all modes:
-
 \# ethtool -s <ethX> advertise 0x1800000001028
