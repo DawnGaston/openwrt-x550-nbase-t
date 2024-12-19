@@ -13,12 +13,12 @@ the following:
 
 \# ethtool -s <ethX> advertise N
 
-Where N is a combination of the following.
-100baseTFull   0x008
-1000baseTFull  0x020
-2500baseTFull  0x800000000000
-5000baseTFull  0x1000000000000
-10000baseTFull 0x1000
+Where N is a combination of the following.  
+100baseTFull   0x008  
+1000baseTFull  0x020  
+2500baseTFull  0x800000000000  
+5000baseTFull  0x1000000000000  
+10000baseTFull 0x1000  
 
-For example, to turn on all modes:
+For example, to turn on all modes:  
 \# ethtool -s <ethX> advertise 0x1800000001028
