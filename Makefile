@@ -7,7 +7,7 @@ include $(INCLUDE_DIR)/package.mk
 
 define Package/x550-nbase-t
   TITLE:=Explicitly advertise 2.5G/5G link modes for Intel x550
-  DEPENDS:=+kmod-ixgbe +ethtool +pciutils
+  DEPENDS:=+kmod-ixgbe +kmod-ixgbevf +ethtool +pciutils
 endef
 
 define Package/x550-nbase-t/description
